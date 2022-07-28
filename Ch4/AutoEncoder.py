@@ -258,7 +258,7 @@ plt.show()
 
 # 実験2 心電図データ
 # loading ECG data
-df = pd.read_csv('qtdbsel102.txt', header=None, delimiter='\t')
+df = pd.read_csv('https://www.cs.ucr.edu/~eamonn/discords/qtdbsel102.txt', header=None, delimiter='\t')
 ecg = df.iloc[:,2].values
 ecg = ecg.reshape(len(ecg), -1)
 print('total length of ECG data : ', len(ecg))
